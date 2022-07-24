@@ -181,14 +181,14 @@ while condicao_parada:
     elif entrada == XINGAMENTO_1 or entrada == XINGAMENTO_2 or entrada == XINGAMENTO_3:
         print('Não xingue seus amigos Sheldon!')
     elif entrada == DESISTIIU:
-        if ULTIMA_1:
-            print('Que potencial desperdiçado...')
-        elif ULTIMA_2:
+        if ULTIMA_1 or ULTIMA_2:
             print('Tão perto, mas tão longe')
         elif ULTIMA_3 or ULTIMA_4:
             print('Não desista Sheldon, você ainda têm muito para alcançar!')
         elif ULTIMA_5:
             print('Nãoooooo, esse momento ia ser seu Sheldon')
+        else:
+            print('Que potencial desperdiçado...')
         condicao_parada = False
 
     ultima_entrada = entrada
